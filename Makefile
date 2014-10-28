@@ -1,7 +1,7 @@
 AutomatedMakefile = am
 CC = g++
 
-FILES = Point.o Points.o Plot.o  QuickTest.o
+FILES = Point.o Points.o Plot.o SortPlot.o
 EXECUTABLE = Run.exe
 
 PROJECT_PATH = $(PROJECT_DIR)
@@ -29,7 +29,5 @@ Points.o:	Points.h Points.cpp
 Plot.o:		Plot.h Plot.cpp
 		$(COMPILE) Plot.cpp
 
-
-
-QuickTest.o: 	Sort.h QuickTest.cpp
-		$(COMPILE) QuickTest.cpp
+SortPlot.o: 	Sort.h SortPlot.h SortPlot.cpp
+		$(COMPILE) SortPlot.cpp
